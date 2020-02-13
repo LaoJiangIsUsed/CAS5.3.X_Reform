@@ -19,9 +19,9 @@ public class GlobalCorsConfig {
         CorsConfiguration config = new CorsConfiguration();
 
         config.setAllowCredentials(true);
-        //config.addAllowedOrigin("*");
-        config.addAllowedOrigin("http://ssoclietone.one.com:9998");
-        config.addAllowedOrigin("http://ssocliettwo.two.com:9997");
+        config.addAllowedOrigin("*");
+        //config.addAllowedOrigin("http://ssoclietone.one.com:9998");
+        //config.addAllowedOrigin("http://ssocliettwo.two.com:9997");
 //        config.addAllowedHeader("Cookie");
 //        config.addAllowedHeader("tempToken");
 //        config.addAllowedHeader("token");

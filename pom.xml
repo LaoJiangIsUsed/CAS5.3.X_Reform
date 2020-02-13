@@ -109,6 +109,22 @@
 			<artifactId>cas-server-core-cookie-api</artifactId>
 			<version>${cas.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apereo.cas</groupId>
+			<artifactId>cas-server-support-jpa-service-registry</artifactId>
+			<version>${cas.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apereo.cas</groupId>
+			<artifactId>cas-server-core-services-api</artifactId>
+			<version>${cas.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apereo.cas</groupId>
+			<artifactId>cas-server-core-authentication-attributes</artifactId>
+			<version>${cas.version}</version>
+		</dependency>
+
 
 
 		<dependency>

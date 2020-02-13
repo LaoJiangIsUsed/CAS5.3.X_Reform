@@ -1,4 +1,5 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.sso.cas.custom.config.CustomAuthenticationConfiguration,\
   com.sso.cas.custom.config.CustomerAuthWebflowConfiguration,\
-  com.sso.cas.custom.config.GlobalCorsConfig
+  com.sso.cas.custom.config.GlobalCorsConfig,\
+  com.sso.cas.custom.config.ScanConfig
