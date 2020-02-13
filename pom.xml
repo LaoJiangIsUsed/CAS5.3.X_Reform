@@ -61,6 +61,12 @@
 	</repositories>
 
 	<dependencies>
+<!--		<dependency>-->
+<!--			<groupId>com.ssolib</groupId>-->
+<!--			<artifactId>ssolib</artifactId>-->
+<!--			<version>1.0.0</version>-->
+<!--		</dependency>-->
+
 		<dependency>
 			<groupId>org.apereo.cas</groupId>
 			<artifactId>cas-server-webapp${app.server}</artifactId>
@@ -68,6 +74,53 @@
 			<type>war</type>
 			<scope>runtime</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.apereo.cas</groupId>
+			<artifactId>cas-server-core-web-api</artifactId>
+			<version>${cas.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apereo.cas</groupId>
+			<artifactId>cas-server-core-authentication-api</artifactId>
+			<version>${cas.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apereo.cas</groupId>
+			<artifactId>cas-server-core-webflow-api</artifactId>
+			<version>${cas.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apereo.cas</groupId>
+			<artifactId>cas-server-core-util-api</artifactId>
+			<version>${cas.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apereo.cas</groupId>
+			<artifactId>cas-server-core-rest</artifactId>
+			<version>${cas.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apereo.cas</groupId>
+			<artifactId>cas-server-support-actions</artifactId>
+			<version>${cas.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apereo.cas</groupId>
+			<artifactId>cas-server-core-cookie-api</artifactId>
+			<version>${cas.version}</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+
+
 		<!--cas 开启rest start-->
 		<dependency>
 			<groupId>org.apereo.cas</groupId>
@@ -143,6 +196,10 @@
 							<artifactId>cas-server-webapp${app.server}</artifactId>
 						</overlay>
 					</overlays>
+					<dependentWarExcludes>
+						<!--让war包下的json不初始化-->
+						**/services/*.json
+					</dependentWarExcludes>
 				</configuration>
 			</plugin>
 			<plugin>
